@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestCreationService.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestPassingService.Tests", "QuestPassingService.Tests\QuestPassingService.Tests.csproj", "{D52F39C1-8D56-4385-A4C5-18527D017F4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestViewingService.Tests", "QuestViewingService.Tests\QuestViewingService.Tests.csproj", "{12250AA8-1851-434C-82E0-B575BBA17F5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{D52F39C1-8D56-4385-A4C5-18527D017F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D52F39C1-8D56-4385-A4C5-18527D017F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D52F39C1-8D56-4385-A4C5-18527D017F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12250AA8-1851-434C-82E0-B575BBA17F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12250AA8-1851-434C-82E0-B575BBA17F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12250AA8-1851-434C-82E0-B575BBA17F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12250AA8-1851-434C-82E0-B575BBA17F5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
