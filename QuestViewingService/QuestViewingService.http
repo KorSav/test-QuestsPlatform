@@ -1,0 +1,14 @@
+@QuestViewingService_HostAddress = http://localhost:5003
+
+### Get all quests
+GET {{QuestViewingService_HostAddress}}/quests
+
+###
+
+### Get a specific quest 
+GET {{QuestViewingService_HostAddress}}/quests/dac6dd41-54a4-481a-8407-432b6c0a63ef
+
+###
+
+### Search quests
+GET {{QuestViewingService_HostAddress}}/quests/search?query=lorem
