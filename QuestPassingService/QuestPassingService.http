@@ -1,0 +1,10 @@
+@QuestPassingService_HostAddress = http://localhost:5002
+
+### Start a new quest progress (replace with actual quest ID)
+POST {{QuestPassingService_HostAddress}}/progress/dac6dd41-54a4-481a-8407-432b6c0a63ef
+Content-Type: application/json
+
+###
+
+### Answer a task for that quest
+PUT {{QuestPassingService_HostAddress}}/progress/dac6dd41-54a4-481a-8407-432b6c0a63ef/answer
