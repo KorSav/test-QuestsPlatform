@@ -1,0 +1,11 @@
+{
+   "$schema": "https://alirezanet.github.io/Husky.Net/schema.json",
+   "tasks": [
+      {
+         "name": "format-staged",
+         "command": "dotnet",
+         "args": ["format", "./QuestsPlatform.sln", "--include", "${staged}", "--verify-no-changes"],
+         "include": ["**/*.cs"]
+      }
+   ]
+}

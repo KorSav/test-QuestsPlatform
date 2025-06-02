@@ -21,10 +21,10 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore
-        run: dotnet restore ./QuestPlatform.sln
+        run: dotnet restore ./QuestsPlatform.sln
 
       - name: Build
-        run: dotnet build ./QuestPlatform.sln --configuration Release --no-restore
+        run: dotnet build ./QuestsPlatform.sln --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test ./QuestPlatform.sln --configuration Release --no-restore --no-build
+        run: dotnet test ./QuestsPlatform.sln --configuration Release --no-restore --no-build
