@@ -1,0 +1,30 @@
+name: Build
+
+on: 
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+env:
+  DOTNET_VERSION: '9.0.x'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore
+        run: dotnet restore ./QuestsPlatform.sln
+
+      - name: Build
+        run: dotnet build ./QuestsPlatform.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test ./QuestsPlatform.sln --configuration Release --no-restore --no-build
